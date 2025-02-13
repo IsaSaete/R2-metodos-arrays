@@ -46,39 +46,35 @@ const words = [
   "diez",
   "Con",
 ];
-const inverseWords = words.reverse();
-const separatedWords = words.join(" ");
-console.log(`${separatedWords + inverseWords}`);
+console.log(words.reverse().join(" "));
 
 let scores: number[] = [];
 scores = [3, 7, 9, 5, 6];
 
 let orderedScores = scores.sort();
+console.log(orderedScores);
 
-for (let index = 0; index < scores.length; index++) {
-  if (scores[index] >= 5) {
-    console.log(scores[index]);
+for (const position in scores) {
+  const allScores = scores[position];
+  if (allScores >= 5) {
+    console.log(allScores);
   }
 }
 
 let averageScores = 0;
-for (let index = 0; index < scores.length; index++) {
-  averageScores = averageScores + scores[index];
+for (const position in scores) {
+  averageScores = averageScores + scores[position];
 }
 console.log(`The average score is: ${averageScores / scores.length}`);
 
 let higuestScores = scores[0];
-for (let index = 0; index < scores.length; index++) {
-  if (scores[index] > higuestScores) {
-    higuestScores = scores[index];
-  }
+for (const position in scores) {
+  if (higuestScores < scores[position]) higuestScores = scores[position];
 }
 console.log(`The highest score is: ${higuestScores}`);
 
 let lowestScores = scores[0];
-for (let index = 0; index < scores.length; index++) {
-  if (scores[index] < higuestScores) {
-    lowestScores = scores[0];
-  }
+for (const position in scores) {
+  if (lowestScores > scores[position]) lowestScores = scores[position];
 }
 console.log(`The lowest score is: ${lowestScores}`);
