@@ -55,23 +55,23 @@ let orderedScores = scores.sort((scoreA, scoreB) => {
   return scoreA - scoreB;
 });
 
-let approvedScores = scores.filter((score) => {
+let approvedScore = scores.filter((score) => {
   return score >= 5;
 });
-console.log(`The approved scores are: ${approvedScores}`);
+console.log(`The approved scores are: ${approvedScore}`);
 
-let sumScores = scores.reduce((scoreA, scoreB) => {
+let sumScore = scores.reduce((scoreA, scoreB) => {
   return scoreA + scoreB;
 }, 0);
-let averageScores = sumScores / scores.length;
-console.log(`The average scores is: ${averageScores}`);
+let averageScore = sumScore / scores.length;
+console.log(`The average scores is: ${averageScore}`);
 
-let maximumScores = scores.reduce((scoreA, scoreB) => {
+let maximumScore = scores.reduce((scoreA, scoreB) => {
   return scoreA > scoreB ? scoreA : scoreB;
 });
-console.log(`The highest score is: ${maximumScores}`);
+console.log(`The highest score is: ${maximumScore}`);
 
-let lowestScores = scores.reduce((scoreA, scoreB) => {
+let lowestScore = scores.reduce((scoreA, scoreB) => {
   return scoreA < scoreB ? scoreA : scoreB;
 });
-console.log(`The lowest score is: ${lowestScores}`);
+console.log(`The lowest score is: ${lowestScore}`);
