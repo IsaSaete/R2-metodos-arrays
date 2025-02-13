@@ -1,7 +1,7 @@
 let years: number[] = [];
-const actualYear = 2024;
+const currentYear = 2024;
 
-for (let yearsCount = 2000; yearsCount <= actualYear; yearsCount++) {
+for (let yearsCount = 2000; yearsCount <= currentYear; yearsCount++) {
   years.push(yearsCount);
 }
 console.log(years);
@@ -51,27 +51,27 @@ console.log(words.reverse().join(" "));
 let scores: number[] = [];
 scores = [3, 7, 9, 5, 6];
 
-let orderedScores = scores.sort((a, b) => {
-  return a - b;
+let orderedScores = scores.sort((scoreA, scoreB) => {
+  return scoreA - scoreB;
 });
 
-let aprovedScores = scores.filter((score) => {
+let approvedScores = scores.filter((score) => {
   return score >= 5;
 });
-console.log(`The approved scores are: ${aprovedScores}`);
+console.log(`The approved scores are: ${approvedScores}`);
 
-let sumScores = scores.reduce((a, b) => {
-  return a + b;
+let sumScores = scores.reduce((scoreA, scoreB) => {
+  return scoreA + scoreB;
 }, 0);
 let averageScores = sumScores / scores.length;
 console.log(`The average scores is: ${averageScores}`);
 
-let maximumScores = scores.reduce((a, b) => {
-  return a > b ? a : b;
+let maximumScores = scores.reduce((scoreA, scoreB) => {
+  return scoreA > scoreB ? scoreA : scoreB;
 });
 console.log(`The highest score is: ${maximumScores}`);
 
-let lowestScores = scores.reduce((a, b) => {
-  return a < b ? a : b;
+let lowestScores = scores.reduce((scoreA, scoreB) => {
+  return scoreA < scoreB ? scoreA : scoreB;
 });
 console.log(`The lowest score is: ${lowestScores}`);
