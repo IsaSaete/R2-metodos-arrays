@@ -1,4 +1,4 @@
-/*let years: number[] = [];
+let years: number[] = [];
 const actualYear = 2024;
 
 for (let yearsCount = 2000; yearsCount <= actualYear; yearsCount++) {
@@ -46,14 +46,7 @@ const words = [
   "diez",
   "Con",
 ];
-console.log(words.reverse().join(" ")); */
-
-// Crea una variable que almacenará las notas de un examen. Créala primero con
-// y un array vacío, y después asígnale un array con 5 notas.>>LISTO
-// Crea una nueva variable y asígnale las notas anteriores pero ordenadas de menor a mayor.>>LISTO
-// Imprime por consola las notas que han sido aprobadas (5 o más).
-// Imprime por consola la nota media.
-// Imprime por consola la nota más alta y la nota más baja.
+console.log(words.reverse().join(" "));
 
 let scores: number[] = [];
 scores = [3, 7, 9, 5, 6];
