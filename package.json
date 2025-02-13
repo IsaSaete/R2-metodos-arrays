@@ -1,10 +1,10 @@
 {
-  "name": "launch-starter-ts",
+  "name": "r2-metodos-arrays",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist",
   "scripts": {
-    "start": "",
-    "build": ""
+    "start": "node .",
+    "build": "tsc"
   },
   "keywords": [],
   "author": "",
