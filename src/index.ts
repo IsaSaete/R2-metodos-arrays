@@ -66,12 +66,12 @@ let sumScore = scores.reduce((scoreA, scoreB) => {
 let averageScore = sumScore / scores.length;
 console.log(`The average scores is: ${averageScore}`);
 
-let maximumScore = scores.reduce(function (scoresA, scoresB) {
+let maximumScore = scores.reduce((scoresA, scoresB) => {
   return Math.max(scoresA, scoresB);
 });
 console.log(`The highest score is: ${maximumScore}`);
 
-let lowestScore = scores.reduce(function (scoresA, scoresB) {
+let lowestScore = scores.reduce((scoresA, scoresB) => {
   return Math.min(scoresA, scoresB);
 });
 console.log(`The lowest score is: ${lowestScore}`);
