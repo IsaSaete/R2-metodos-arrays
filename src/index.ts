@@ -66,15 +66,9 @@ let sumScore = scores.reduce((scoreA, scoreB) => {
 let averageScore = sumScore / scores.length;
 console.log(`The average scores is: ${averageScore}`);
 
-let highestScore = scores[0];
-for (let index = 0; index < scores.length; index++) {
-  if (scores[index] > highestScore) highestScore = scores[index];
-}
+let maximumScore = Math.max(...scores);
+console.log(`The highest score is: ${maximumScore}`);
 
-console.log(`The highest score is: ${highestScore}`);
+let lowestScore = Math.min(...scores);
 
-let lowestScore = scores[0];
-for (let index = 0; index < scores.length; index++) {
-  if (scores[index] < lowestScore) lowestScore = scores[index];
-}
 console.log(`The lowest score is: ${lowestScore}`);
